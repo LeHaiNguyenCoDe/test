@@ -1,11 +1,14 @@
-class Calculator
+namespace Calculator
 {
-	public int Sum(int a, int b)
+    class Calculator
     {
-        return a + b;
-    }
-    public int Multiply(int a, int b)
-    {
-        return a * b;
+        public static int Sum(int a, int b)
+        {
+            return a + b;
+        }
+        public static int Multiply(int a, int b)
+        {
+            return a * b;
+        }
     }
 }

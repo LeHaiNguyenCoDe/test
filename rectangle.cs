@@ -1,9 +1,21 @@
-class Rectangle
+using Calculator;
+namespace Rectangle
 {
-    public int length, width;
-    void Rectangle(int length, int width)
+    class Rectangle
     {
-        this.length = length;
-        this.width = width;
+        public int length, width;
+        void Rectangle(int length, int width)
+        {
+            this.length = length;
+            this.width = width;
+        }
+        public int Area(int a, int b)
+        {
+            return Calculator.Multiply(a, b);
+        }
+        public int Perimeter(int a, int b)
+        {
+            return Calculator.Sum(a, b);
+        }
     }
 }
